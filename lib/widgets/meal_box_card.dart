@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MealBoxCard extends StatelessWidget {
   const MealBoxCard({super.key});
@@ -70,12 +69,11 @@ class MealBoxCard extends StatelessWidget {
                             SizedBox(height: 40),
                           ],
                         ),
-                        SizedBox(width: 10),
                         Column(
                           children: [
                             CircleAvatar(
                               backgroundColor: Colors.deepPurple,
-                              radius: 20,
+                              radius: 16,
                               child: IconButton(
                                 padding: EdgeInsets.zero,
                                 icon: Icon(
@@ -136,6 +134,7 @@ class MealBoxCard extends StatelessWidget {
                   children: [
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -160,7 +159,7 @@ class MealBoxCard extends StatelessWidget {
                                   color: Colors.pink,
                                 ),
                                 Text(
-                                  " Min 120 Guests",
+                                  "Min 120 Guests",
                                   style: TextStyle(
                                     fontSize: 13,
                                     fontWeight: FontWeight.w600,
@@ -169,7 +168,7 @@ class MealBoxCard extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 40),
+                            SizedBox(height: 30),
                           ],
                         ),
                         SizedBox(width: 5),
@@ -177,7 +176,7 @@ class MealBoxCard extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               backgroundColor: Colors.pink,
-                              radius: 20,
+                              radius: 16,
                               child: IconButton(
                                 padding: EdgeInsets.zero,
                                 icon: Icon(

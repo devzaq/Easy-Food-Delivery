@@ -8,6 +8,7 @@ import 'package:cmp_assignment/widgets/meal_box_platter_card.dart';
 import 'package:cmp_assignment/widgets/offer_card.dart';
 import 'package:cmp_assignment/widgets/platter_card.dart';
 import 'package:cmp_assignment/widgets/platter_heading.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -57,11 +58,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       style:
                           TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
                     ),
-                    SizedBox(
-                      width: 230,
-                      child: Divider(
-                        thickness: 0.05,
-                        color: Colors.black,
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: SizedBox(
+                        child: Divider(
+                          thickness: 0.05,
+                          color: Colors.black,
+                        ),
                       ),
                     )
                   ],
@@ -78,11 +81,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       style:
                           TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
                     ),
-                    SizedBox(
-                      width: 150,
-                      child: Divider(
-                        thickness: 0.05,
-                        color: Colors.black,
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: SizedBox(
+                        child: Divider(
+                          thickness: 0.05,
+                          color: Colors.black,
+                        ),
                       ),
                     )
                   ],

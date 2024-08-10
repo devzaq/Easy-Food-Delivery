@@ -71,6 +71,7 @@ class MainScreenState extends State<MainScreen> {
             ),
             child: ListView.builder(
               itemCount: 3,
+              physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.symmetric(horizontal: size.width * .045),
               itemBuilder: (context, index) => InkWell(
@@ -89,8 +90,8 @@ class MainScreenState extends State<MainScreen> {
                           ? Column(
                               children: [
                                 Container(
-                                  height: 72,
-                                  width: 72,
+                                  height: 70,
+                                  width: 70,
                                   decoration: const BoxDecoration(
                                     image: DecorationImage(
                                       alignment: Alignment.center,
