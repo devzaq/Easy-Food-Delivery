@@ -19,14 +19,13 @@ class _OnClickPLayState extends State<OnClickPLay> {
   }
 }
 
-void main() => runApp(const VideoApp());
 
 /// Stateful widget to fetch and then display video content.
 class VideoApp extends StatefulWidget {
   const VideoApp({super.key});
 
   @override
-  _VideoAppState createState() => _VideoAppState();
+  State<VideoApp> createState() => _VideoAppState();
 }
 
 class _VideoAppState extends State<VideoApp> {
