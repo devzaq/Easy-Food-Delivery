@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const HomeAppbar(),
+                HomeAppbar(),
                 const SizedBox(height: 30),
                 SizedBox(
                   height: 160,

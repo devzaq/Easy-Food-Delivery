@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+import 'package:cmp_assignment/screens/on_click_play_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeAppbar extends StatelessWidget {
@@ -7,7 +10,7 @@ class HomeAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Material(
+    return Material(
       color: Colors.white,
       child: SingleChildScrollView(
         child: Column(
@@ -59,18 +62,25 @@ class HomeAppbar extends StatelessWidget {
                       )
                     ],
                   ),
-                  Column(
-                    children: [
-                      Icon(
-                        Icons.play_circle_outline,
-                        color: Colors.deepPurple,
-                        size: 30,
-                      ),
-                      Text(
-                        "How it works?",
-                        style: TextStyle(fontSize: 12),
-                      )
-                    ],
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => OnClickPLay(),
+                        )),
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.play_circle_outline,
+                          color: Colors.deepPurple,
+                          size: 30,
+                        ),
+                        Text(
+                          "How it works?",
+                          style: TextStyle(fontSize: 12),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
