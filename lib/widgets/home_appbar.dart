@@ -66,7 +66,7 @@ class HomeAppbar extends StatelessWidget {
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => OnClickPLay(),
+                          builder: (context) => OnClickPLayScreen(),
                         )),
                     child: Column(
                       children: [
